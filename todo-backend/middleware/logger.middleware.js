@@ -1,7 +1,7 @@
 const requestLogger = (req, res, next) => {
   console.log('\n📥 Incoming Request:');
   console.log(`  📍 ${req.method} ${req.path}`);
-  console.log(`  📦 Body:`, req.body);
+  // console.log(`  📦 Body:`, req.body);
   console.log(`  🍪 Cookies:`, req.cookies);
   next();
 };
