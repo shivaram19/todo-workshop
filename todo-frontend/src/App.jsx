@@ -11,6 +11,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/todos" element={<TodoList />} />
         <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="*" element={<>..you have to come to route that doesn't exist </>} />
       </Routes>
     </Router>
   );
